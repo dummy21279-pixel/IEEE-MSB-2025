@@ -26,6 +26,7 @@ import { useState } from "react";
 import {useSelector} from 'react-redux'
 import { Play, Pause, Volume2, VolumeX, Maximize } from "lucide-react";
 import { getCloudinaryVideo } from "./utils/cloudinary";
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -286,6 +287,7 @@ function app(){
  <div>
     <RouterProvider router={router}></RouterProvider>
     <Toaster position="top-center" reverseOrder={false} />
+    <Analytics />
   </div>
   )
 }
